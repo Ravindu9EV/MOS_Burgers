@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #B39C00;
+    text-align: end;
+    padding: 20px;
+    z-index: 100;
+}
+header nav a{
+  padding: 15px 25px;  
+  color: #FFE533; 
+   text-transform: capitalize;
+   
+}
+
+
+header nav a.active ,
+header nav a:hover{
+    color: #4C4300;
+    background: #FFE533;
+
+}
+
+
+header .logo img {
+    width: 80%;
+  
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7em;
+    color: #FFE533;
+    font-weight: bolder;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.imgSlider{
+    margin-top:91px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #4C4300;
+    background-image: radial-gradient(
+        #807000, transparent 50%
+    );
+}
+
+.imgSlider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.imgSlider .list .item.active{
+    width: 90%;
+    filter: drop-shadow(0 0 0 20px #191600);
+}
+
+.imgSlider .content{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: FFFCE6;
+    width: max-content;
+}
+.imgSlider .content div:nth-child(2){
+    position: relative;
+}
+
+
+#prev, #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFEC66;
+    border: 1px solid #FFEC68;
+    color: #191600;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 15px;
+}
+
+#prev{
+    left: 20px;
+}
+#next{
+    right: 20px;
+}
+
+
