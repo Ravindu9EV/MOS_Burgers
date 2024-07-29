@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <header>
-      <figure><img src="" class="logo" alt="" /></figure>
-      <nav onscroll="">
-        <a href="#home" class="active">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#preOrders">Previous Orders</a>
-        <a href="#reports">Reports</a>
-        <a href="#" style="margin-right: 25px">Cart</a>
-      </nav>
-    </header>
+    <nav class="navBar">
+      <!-- <ul > -->
+       <a href="#"> <img src="" style=" justify-content: flex-start;" class="logo" alt="" /></a>
+        <a href="#home" class="active smallScreen">Home</a>
+        <a href="#menu" class="smallScreen">Menu</a>
+        <a href="#preOrders" class="smallScreen">Previous Orders</a>
+        <a href="#reports" class="smallScreen">Reports</a>
+        
+        <a href="#" style="margin-right: 25px" class="smallScreen">Cart</a>
+        
+      <!-- </ul> -->
+    </nav>
+
     <section id="home">
-      <div class="imgSlider">
+      
+      <div  class="imgSlider">
+        <h1 style="display: flex; justify-content: center; margin-bottom: 40px;">MOS Burgers</h1>
         <div class="list">
           <input type="radio" name="radio-btn" id="radio1" />
           <input type="radio" name="radio-btn" id="radio2" />
@@ -37,7 +42,6 @@
           <div class="item">
             <img src="images/beverage.jpg" alt="" />
           </div>
-
           <div class="navigation-auto">
             <div class="auto-btn1"></div>
             <div class="auto-btn2"></div>
@@ -51,9 +55,7 @@
             <label for="radio4" class="manual-btn"></label>
           </div>
         </div>
-        
       </div>
-      
     </section>
     <section id="menu">Menu</section>
     <section id="preOrders">Previous Orders</section>
