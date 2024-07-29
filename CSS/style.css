@@ -72,56 +72,111 @@ section{
     );
 }
 
-.imgSlider .list{
+ .list{
     position: absolute;
-    width: max-content;
+    width: 500%;
     height: 100%;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    transition: transform 1s;
+    
+    
+   
 }
 
-.imgSlider .list .item.active{
+.item img{
+    width: 800px;
+    height: 500px;
+
+}
+
+ .list .item.active{
     width: 90%;
     filter: drop-shadow(0 0 0 20px #191600);
 }
 
-.imgSlider .content{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: FFFCE6;
-    width: max-content;
+.list input{
+    display: none;
 }
-.imgSlider .content div:nth-child(2){
-    position: relative;
+
+.item{
+    width: 20%;
+    transition: 2s;
+    display: flex;
+    margin-top: 40px;
+    
+    justify-content: center;
 }
 
 
-#prev, #next{
+ /* .navigation-manual{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #FFEC66;
-    border: 1px solid #FFEC68;
-    color: #191600;
-    font-size: x-large;
-    font-family: monospace;
+    /* width: 800px; */
+    /* margin-top: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+/* }  */
+.manual-btn{
+    border: 2px solid #FFEC66;
+    padding: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    z-index: 15px;
+    
+    transition: 1s;
 }
 
-#prev{
-    left: 20px;
+.manual-btn:not(:last-child){
+    margin-right: 40px;
 }
-#next{
-    right: 20px;
+.manual-btn:hover{
+    background: #FFEC66;
 }
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-manual,
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 580px;
+    justify-content: center;
+    left: 380px;
+}
+
+.navigation-auto div{
+    border: 2px solid #FFEC66;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #FFEC66;
+}
+#radio2:checked~ .navigation-auto .auto-btn2{
+    background: #FFEC66;
+}
+#radio3:checked~ .navigation-auto .auto-btn3{
+    background: #FFEC66;
+}
+#radio4:checked~ .navigation-auto .auto-btn4{
+    background: #FFEC66;
+}
+
 
 
