@@ -5,7 +5,9 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
-
+body{
+    background: #4C4300;
+}
 nav{
     top: 0;
     left: 0;
@@ -313,6 +315,7 @@ section{
 /* -------------------Menu-------------- */
 #menu{
     background: #4C4300;
+   
 }
 .container3{
     position: absolute;
@@ -320,16 +323,22 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 1050px;
+    
 }
 .bLines{
-   margin-left: -1200px;
+   margin-left: 100px;
    display: flex;
    justify-content: center;
-   margin-top: -200px;
+   margin-top: -2000px;
 }
 .text3{
-    
+    position: relative;
+    margin-left: 680px;
+    margin-top: 300px;
     color: #332D00;
+    font-size: 2.5rem;
+    
 }
 .row{
     position: absolute;
@@ -346,13 +355,18 @@ section{
 .card{
     position: relative;
     justify-content: center;
-
+    border: 1px solid #80710082;
     margin: 10px;
    
     padding: 50px 25px;
     width: 200px;
     height: 100px;
     background-color: #807000;
+}
+
+.card:hover{
+    
+    box-shadow: .4px .2px 10px #918631;
 }
 .img {
     position: relative;
@@ -362,28 +376,52 @@ section{
     padding-right: 40px;
     margin-bottom: 100px;
 }
+.subHeading h3{
+    position: absolute;
+    margin-top: -1040px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: #332D00;
+}
 .para{
     width: 100px;
     left: 110px;
-    top: -325px;
+    top: -310px;
     font-size: .5rem;
     position: relative;
     text-align: justify; 
     
 }
 .para p{
+    color: #FFEC66;
+}
+.price{
+    margin-bottom: 15px;
+}
+.price h6,.price p{
+    display: flex;
+    flex-direction: row;
+}
+.exp {
     
+    display: flex;
+}
+.exp p{
+    margin-top: 2px;
 }
 .btnPanel{
     position: absolute;
     flex-direction: column;
+    margin-top: -190px;
+    margin-left: 6px;
 }
 .btnRow{
     position: relative;
     flex-direction: row;
-    margin-top: -350px;
+    margin-top: -100px; 
 
-}
+} 
 .btn{
     margin-bottom: -30px;
     margin-left: -15px;
@@ -395,6 +433,7 @@ section{
     border-radius: 10px;
     background: #4C4300;
     font-weight:bold ;
+    
 }
 #btnEdit{
     padding: 5px 34px;
@@ -410,8 +449,11 @@ section{
     border-radius: 10px;
     background: #4C4300;
     font-weight:bold ;
+    margin-left: 120px;
 }
 #btnRemove{
+    margin-left: 120px;
+   
     padding: 5px 20px;
     color: #FFF9CC;
     border-radius: 10px;
@@ -421,8 +463,8 @@ section{
 .btnRow2{
     position: relative;
     flex-direction: row;
-    margin-top: -120px;
-    margin-left: 120px;
+    margin-top: 50px;
+    
 }
 #btnEdit:hover, #btnAdd:hover, #btnBuy:hover, #btnRemove:hover{
     background: #FFF9CC;
