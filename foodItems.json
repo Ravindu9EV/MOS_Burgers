@@ -1,0 +1,69 @@
+[
+    {
+        "id":"B001",
+        "image": "images/burger.jpg",
+        "name": "Cheese Burger",
+        "discription": "Tasty Burger with cheese and tomato source..You can add more topings..",
+        "price": 1500.00,
+        "discount": 200.00
+
+
+    },
+    {
+        "id":"B002",
+        "image": "images/burger.jpg",
+        "name": "Chicken Burger",
+        "discription": "Tasty Burger with cheese and tomato source..You can add more topings..",
+        "price": 1200.00,
+        "discount": 40.00
+
+
+    },
+    {
+        "id":"B003",
+        "image": "images/burger.jpg",
+        "name": "Beef Burger",
+        "discription": "Tasty Burger with cheese and tomato source..You can add more topings..",
+        "price": 1200.00,
+        "discount": 80.00
+
+
+    },{
+        "id":"B004",
+        "image": "images/burger.jpg",
+        "name": "Tanduri Burger",
+        "discription": "Tasty Burger with cheese and tomato source..You can add more topings..",
+        "price": 2200.00,
+        "discount": 100.00
+
+
+    },{
+        "id":"B005",
+        "image": "images/burger.jpg",
+        "name": "Beef Burger",
+        "discription": "Tasty Burger with cheese and tomato source..You can add more topings..",
+        "price": 3200.00,
+        "discount": 250.00
+
+
+    },{
+        "id":"S006",
+        "image": "./images/submarine.jpg",
+        "name": "Vegi Burger",
+        "discription": "Tasty Burger with cheese and tomato source..You can add more topings..",
+        "price": 700.00,
+        "discount": 20.00
+
+
+    },{
+        "id":"B007",
+        "image": "./images/burger.jpg",
+        "name": "Mutton Burger",
+        "discription": "Tasty Burger with cheese and tomato source..You can add more topings..",
+        "price": 3100.00,
+        "discount": 320.00
+
+
+    }
+    
+]

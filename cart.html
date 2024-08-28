@@ -12,9 +12,7 @@
         <h3></h3>
         <h2>Cart</h2>
         <div class="btnPanel">
-          <a href="index.html/.text3"
-            ><button id="btnMenu" class="btn">Menu</button></a
-          >
+          <a><button id="btnMenu" class="btn">Menu</button></a>
           <a href="" src="#menu"
             ><button id=" btnCtg" class="btn">Categoties</button></a
           >
@@ -23,33 +21,50 @@
       </div>
 
       <div class="base">
-        <table>
-          <thead>
-            <tr>
-              <td class="th">Item</td>
-              <td class="th">Unit Price</td>
-              <td class="th">Discount</td>
-              <td class="th">Quantity</td>
-            </tr>
-          </thead>
-          <tbody id="table-body"></tbody>
-        </table>
+        <div class="tbl flex-column col-6">
+          <table>
+            <thead>
+              <tr>
+                <td class="th">Item</td>
+                <td class="th">Unit Price</td>
+                <td class="th">Discount</td>
+                <td class="th">Quantity</td>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <tr>
+                <td class="fName cDetails">Burger</td>
+                <td class="fPrice cDetails">1200.00</td>
+                <td class="fDiscount cDetails">200</td>
+                <td class="fQuantity cDetails">1</td>
+              </tr>
+            </tbody>
+            <div class="tblF"></div>
+          </table>
+        </div>
 
-        <div class="cal">
-          <div class="row">
+        <div class="cal col-6">
+          <div id="calDet" class="row">
             <h4 id="tot">Total =</h4>
+            <input id="addTotal" for="text" />
           </div>
-          <div class="row">
+          <div id="calDet" class="row">
             <h4>Discount =</h4>
+            <input id="addDiscount" for="text" />
           </div>
-          <div class="row">
+          <div id="calDet" class="row">
             <h4>Final Amount =</h4>
+            <input
+              id="addFinalAmount"
+              oninput="calculateFinalAmount()"
+              type="text"
+            />
           </div>
-          <button class="btnOrder">Order</button>
+          <button id="orderBtn" class="btnOrder">Order</button>
         </div>
       </div>
     </div>
-    <script src="js/cart.js"></script>
-    <script></script>
+
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>

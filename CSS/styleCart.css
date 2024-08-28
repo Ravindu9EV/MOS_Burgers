@@ -21,8 +21,10 @@ body{
 }
 
 .container{
-    display: flex;
+    
+
     position: absolute;
+    grid-template-columns: repeat(4,1fr);
 }
 .heading{
     display: flex;
@@ -71,8 +73,10 @@ table{
     margin-left: 80px;
     margin-right: 15px;
     display: flex;
+    flex-direction: column;
 }
 .th{
+    
     margin-right: 20px;
     justify-content: space-between;
     padding: 10px 70px;
@@ -89,7 +93,9 @@ table{
     color: #eee287;
 }
 .row{
-
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4,1fr);
     margin: 50px;
     
 }
@@ -112,4 +118,14 @@ table{
     background: #eee287;
     color: goldenrod;
     box-shadow: 2px 3px 18px goldenrod;
+}
+
+#calDet{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+#addTotal,#addDiscount,#addFinalAmount{
+    margin-left: 20px;
 }
