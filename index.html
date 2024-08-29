@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mos Burgers</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/styleCart.css" />
   </head>
   <body class="showCart">
     <div class="container">
@@ -31,7 +32,7 @@
 
         <header>
           <div class="cart">
-            <a href="cart.html" style="margin-right: 25px" class="smallScreen"
+            <a style="margin-right: 25px" class="smallScreen"
               ><svg
                 class="w-6 h-6 text-gray-800 dark:text-white"
                 aria-hidden="true"
@@ -168,7 +169,8 @@
         </div>
       </div>
 
-      <div class="cartt">
+      <div class="tRows"></div>
+      <!-- <div class="cartt">
         <h1>Shopping Cart</h1>
         <div class="itemList">
           <div class="food">
@@ -188,84 +190,97 @@
           <div class="closeBtn">CLOSE</div>
           <div class="orderBtn">Order</div>
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <!-- <div class="card card1">
-          <div class="img">
-            <img src="images/burger.jpg" style="width: 120px" alt="" />
+    <section id="cartPage">
+      <div class="containerCart">
+        <div class="heading">
+          <h3></h3>
+          <h2>Cart</h2>
+          <div class="btnPanelC">
+            <a><button id="btnMenu" class="btnC">Menu</button></a>
+            <a href="" src="#menu"
+              ><button id=" btnCtg" class="btnC">Categoties</button></a
+            >
+            <a href=""><button id="btnFindF" class="btnC">Find Food</button></a>
           </div>
-          <div class="para">
-            <h5
-              class="iName"
-              style="
-                font-size: 0.6rem;
-                margin-bottom: 10px;
-                color: #332d00;
-              "
-            >
-              Cheese burger
-            </h5>
-  
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-            <div
-              id="det"
-              style="margin-top: 5px; margin-left: 20px"
-              class="details"
-            >
-              <div class="price">
-                <h6 style="font-size: 10px; color: #fff9cc">
-                  Rs.
-                  <p
-                    class="prc"
-                    style="
-                      ont-size: 10px;
-                      margin-left: 4px;
-                      color: #fff9cc;
-                    "
-                  >
-                    2100.00
-                  </p>
-                </h6>
-                <div class="disc row">
-                  <label for="price">discount: </label>
-                  <p
-                    class="dsc"
-                    style="
-                      ont-size: 10px;
-                      margin-left: 4px;
-                      color: #fff9cc;
-                    "
-                  >
-                    200.00
-                  </p>
+        </div>
+
+        <div class="base">
+          <div class="tbl flex-column col-6">
+            <table class="tableC">
+              <thead>
+                <tr>
+                  <td class="thC tHeadName">Item</td>
+                  <td class="thC tHeadPrice">Unit Price</td>
+                  <td class="thC">Discount</td>
+                  <td class="thC tHeadQuantity">Quantity</td>
+                </tr>
+              </thead>
+              <!-- <tbody id="table-body"></tbody> -->
+              <div class="tblF"></div>
+            </table>
+            <div class="tRows">
+              <div class="tRow" style="height: 50px">
+                <div class="thC fName cDetails">
+                  <img src="images/burger.jpg" alt="" />
+                  <p>Burger</p>
+                </div>
+                <div class="thC fPrice cDetails">1200.00</div>
+                <div class="thC fDiscount cDetails">200</div>
+                <div class="thC fQuantity cDetails">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  <div class="btnPC">
+                    <button class="btnC">Update</button>
+                    <button class="btnC">Delete</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tRow" style="height: 50px">
+                <div class="thC fName cDetails">
+                  <img src="images/burger.jpg" alt="" />
+                  <p>Submarine</p>
+                </div>
+                <div class="thC fPrice cDetails">2000.00</div>
+                <div class="thC fDiscount cDetails">350</div>
+                <div class="thC fQuantity cDetails">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  <div class="btnPC">
+                    <button class="btnC">Update</button>
+                    <button class="btnC">Delete</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="btnPanel">
-            <div class="btnRow">
-              <div class="btn">
-                <button id="btnAdd" class="addbtn">Add to Cart</button>
-              </div>
-              <div class="btn"><button id="btnBuy">Buy</button></div>
+
+          <div class="cal col-6">
+            <div id="calDet" class="rowC">
+              <h4 id="tot">Total =</h4>
+              <input id="addTotal" for="text" />
             </div>
-            <div class="btnRow2">
-              <div class="btn">
-                <button id="btnEdit">Edit</button>
-              </div>
-              <div class="btn">
-                <button id="btnRemove">Remove</button>
-              </div>
+            <div id="calDet" class="rowC">
+              <h4>Discount =</h4>
+              <input id="addDiscount" for="text" />
             </div>
+            <div id="calDet" class="rowC">
+              <h4>Final Amount =</h4>
+              <input
+                id="addFinalAmount"
+                oninput="calculateFinalAmount()"
+                type="text"
+              />
+            </div>
+            <button id="orderBtn" class="btnOrderC">Order</button>
           </div>
         </div>
-      </div> -->
-
-    <!-- </section> -->
-
+      </div>
+    </section>
     <script src="js/app.js" type="module"></script>
   </body>
 </html>
