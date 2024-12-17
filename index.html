@@ -26,6 +26,7 @@
         <a href="#home" class="active smallScreen">Home</a>
         <a href="#categories" class="smallScreen">Categories</a>
         <a href="#search" class="smallScreen">Search</a>
+        <a href="addItem.html" class="smallScreen">Add Item</a>
         <a href="#menu" class="smallScreen">Menu</a>
         <a href="#preOrders" class="smallScreen">Previous Orders</a>
         <a href="#reports" class="smallScreen">Reports</a>
@@ -148,7 +149,7 @@
       <div id="f" class="cards">
         <div class="card">
           <h5 class="iName">Cheese Burger</h5>
-          <div class="row">
+          <div class="roww">
             <img src="images/burger.jpg" alt="" />
 
             <p>A Tasty Burger with cheese .You can get more ...</p>
@@ -199,7 +200,7 @@
           <h3></h3>
           <h2>Cart</h2>
           <div class="btnPanelC">
-            <a><button id="btnMenu" class="btnC">Menu</button></a>
+            <a src="#menu"><button id="btnMenu" class="btnC">Menu</button></a>
             <a href="" src="#menu"
               ><button id=" btnCtg" class="btnC">Categoties</button></a
             >
@@ -218,7 +219,7 @@
                   <td class="thC tHeadQuantity">Quantity</td>
                 </tr>
               </thead>
-              <!-- <tbody id="table-body"></tbody> -->
+              <tbody id="table-body"></tbody>
               <div class="tblF"></div>
             </table>
             <div class="tRows">
@@ -281,6 +282,17 @@
         </div>
       </div>
     </section>
+
+    <div class="foodInventry">
+      <table>
+        <th>Item code</th>
+        <th>ItemName</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Discount</th>
+      </table>
+    </div>
+
     <script src="js/app.js" type="module"></script>
   </body>
 </html>

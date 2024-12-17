@@ -42,6 +42,40 @@ closeCart.addEventListener("click", () => {
   document.querySelector("#cartPage").ariaHidden;
 });
 
+const burger = [
+  {
+    category: "Burgers",
+    code: "B1001",
+    name: "Classic Burger(Large)",
+    description: "Tasty Burger",
+    price: 750.0,
+    discount: 15,
+    expDate: "2024-09-28",
+  },
+];
+let pasta = [];
+let fries = [];
+let chicken = [];
+let submarine = [];
+let bevarage = [];
+const inventory = JSON.parse(localStorage.getItem("foodList")) || [
+  {
+    category: "Burgers",
+    code: "B1001",
+    name: "Classic Burger(Large)",
+    description: "Tasty Burger",
+    price: 750.0,
+    discount: 15,
+    expDate: "2024-09-28",
+  },
+];
+
+inventory.forEach((inv) => {
+  console.log(1);
+
+  console.log("Inv: " + inv.code);
+});
+
 const addDataToRow = () => {
   itemListHTML.innerHTML = "";
   if (itemList.length > 0) {

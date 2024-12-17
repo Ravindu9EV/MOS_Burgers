@@ -529,7 +529,7 @@ svg{
 
 
 /* ----------edit menu----------- */
-.row{
+.roww{
     display: grid;
     grid-template-columns: repeat(1,4fr);
     height: 150px;
@@ -552,12 +552,12 @@ svg{
     width: 200px;
     height: 210px;
 }
-.cards .card .row{
+.cards .card .roww{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 
-.cards .card .row img{
+.cards .card .roww img{
     width: 60px;
     margin-left: -12px;
     margin-top: -8px;
@@ -575,7 +575,7 @@ svg{
     font-size: 0.6rem;
 }
 
-.cards .card .row p{
+.cards .card .roww p{
     font-size: smaller;
     position: relative;
     text-align: justify;
@@ -727,6 +727,17 @@ body.showCart .container{
     width: 0;
 }
 
+/* Add Items */
+#addItems{
+    min-height: 100vh;
+    overflow: hidden;
+    /* font-size: 4em; */
+    color: #FFE533;
+    /* font-weight: bolder; */
+    padding-bottom: 0px;
+    /* text-transform: uppercase; */
+}
+
 /* ---------------shopping cart */
 *{
     margin: 0;
@@ -753,7 +764,7 @@ body.showCart .container{
 }
 #cartPage{
     min-height: 100vh;
-    overflow: hidden;
+    
     /* font-size: 4em; */
     color: #FFE533;
     /* font-weight: bolder; */
